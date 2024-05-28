@@ -1,6 +1,7 @@
 nomeLoop = False
 salarioLoop = False
 bonusLoop = False
+COMISSAO_FIXA = 1000
 
 while not nomeLoop:
     try:
@@ -31,7 +32,7 @@ while not bonusLoop:
             raise ValueError("O nome deve conter apenas números.")
         else:
             bonusLoop = True   
-            salario_bonado = 1000 + salario * bonus
+            salario_bonado = COMISSAO_FIXA + salario * bonus
             print(f"Olá, {nome_usuario}! Seu salário é {salario}, o bônus foi de {bonus}, salário bonificado é de: {salario_bonado}")
     except ValueError as e:
         print("Erro:", e)
