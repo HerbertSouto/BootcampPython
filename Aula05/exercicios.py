@@ -145,56 +145,6 @@ print(f"A sua frase contém {contador} vogais.")
 Crie um dicionário para armazenar informações de um aluno: nome, idade e notas (uma lista de três notas). Calcule a média das notas e imprima as informações do aluno e sua média.
 
 """
-
-aluno:dict = {}
-
-while True:
-  nome_aluno:str = input("digite seu nome: ")
-  if nome_aluno.isalpha():
-    aluno["nome"] = nome_aluno
-    break
-  else:
-    print("Nome inválido, digite novamente")
-
-while True:
-    try:
-        nota1:float = float(input("Digite a primeira nota: "))
-        if nota1 > 0:
-            aluno["nota 1"] = nota1
-            break
-        else:
-           print("Nota menor ou igual a zero, digite novamente")
-    except:
-        print("Nota inválida, digite novamente")
-
-while True:
-    try:
-        nota2:float = float(input("Digite a segunda nota: "))
-        if nota2 > 0:
-            aluno["nota 2"] = nota2
-            break
-        else:
-           print("Nota menor ou igual a zero, digite novamente")
-    except:
-        print("Nota inválida, digite novamente")
-
-while True:
-    try:
-        nota3:float = float(input("Digite a terceira nota: "))
-        if nota3 > 0:
-            aluno["nota 3"] = nota3
-            break
-        else:
-           print("Nota menor ou igual a zero, digite novamente")
-    except:
-        print("Nota inválida, digite novamente")
-
-media = round(float((aluno["nota 1"] + aluno["nota 2"] + aluno["nota 3"]) / 3),2)
-
-print(f"Nome do aluno: {aluno['nome']}")
-print(f"Primeira nota: {aluno['nota 1']} \nSegunda nota: {aluno['nota 2']} \nTerceira nota: {aluno['nota 3']}")
-print(f"Média do aluno: {media}")
-
 aluno:dict = {}
 
 while True:
