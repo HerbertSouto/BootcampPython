@@ -18,6 +18,8 @@ pre-commit = "^3.7.1"
 flake8 = "^7.0.0"
 importlib-metadata = "^7.1.0"
 pre-commit = "^3.7.1"
+black = "^24.4.2"
+isort = "^5.13.2"
 
 [build-system]
 requires = ["poetry-core"]
